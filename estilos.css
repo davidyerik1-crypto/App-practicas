@@ -1,0 +1,20 @@
+table{
+    border-color: blueviolet;
+    background:rgb(93, 195, 221);
+    border-radius: 10px;
+    color:black;
+    text-align:center;
+    align-items: center;
+}
+td{
+    background: white;
+    color: blue;
+}
+a{
+    text-align:end;
+    box-shadow: white;
+    font-size: larger;
+}
+a:hover{
+    text-decoration: red;
+}

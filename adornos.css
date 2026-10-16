@@ -1,0 +1,13 @@
+*{
+    
+    color:rgb(255, 255, 255);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(238, 17, 17);
+    font-size: 16pt;
+}
