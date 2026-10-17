@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(132, 218, 218);
+}
+
+h1{
+    text-align: center;
+    color: rgb(35, 35, 252);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h4{
+    text-align: center;
+    color: rgb(4, 3, 68);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: aqua;
+}
+
+
+.info_alumno1 {
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    background-color: rgb(51, 51, 218);
+    margin-bottom: 10px;
+}
+.info_alumno1 p{
+    margin-right: 40px;
+    color: white;
+}
+
+.info_alumno2 {
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    background-color: rgb(51, 51, 218);
+}
+.info_alumno2 p{
+    margin-right: 40px;
+    color: white;
+}
+
+.tablaPrincipal{
+    border-radius: 30px;
+    background-color: rgb(244,248,255);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+table{
+    margin: auto;
+    background-color: aliceblue;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    width: 80%;
+}
+.encabezado{
+    background-color: blue;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.abcd{
+    background-color: rgb(124, 124, 214);
+    color: rgb(35, 35, 252);
+}
+
+.coloreado{
+    background-color: rgb(124, 124, 214);
+    color: white;
+}
+
+.tablaSecundaria table{
+    width: 80%;
+}
+
+.footer{
+    background-color: rgb(37, 37, 65);
+    padding: 20px;
+    margin-bottom: auto;
+
+}
