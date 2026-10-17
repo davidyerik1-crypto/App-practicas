@@ -1,0 +1,172 @@
+*{
+    box-sizing:border-box;
+    margin: 2px;
+    padding:0;
+
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: normal;
+    color: black;
+    background-color: rgb(29, 37, 146);
+}
+h1{
+    color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main h2{
+    color: rgb(36, 18, 102);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.encabezado{
+    background: -moz-linear-gradient(rgb(47, 153, 247)),(blueviolet);
+    color:azure;
+    padding:20px;
+}
+.encabezado h1{font-size: clamp(2rem.5vw,3rem);margin-bottom:10px;}
+
+.navegacion{
+    background-color: rgb(95, 28, 158);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    padding:15px; 
+    gap:10px;
+}
+
+
+.navegacion a{
+    color:white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: background-color 1s;
+}
+
+.navegacion a:hover{
+    background-color: #77138b;
+    border-radius: 40px;
+    color: aliceblue;
+    transform: translateY(-4px);
+    transform: scale(1.20);
+}
+.index a:hover{
+    background-color: aquamarine;
+}
+.navegacion a:focus-visible{
+    color: #252525;
+}
+
+.contenedor{
+    width: min(1100px, 92%);
+    margin: 30px auto;
+}
+.cuadro{
+    background-color: rgb(61, 78, 230);
+    border-radius: 40px;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+section{
+    margin-bottom: 35px;
+    scroll-margin-top: 20px;
+}
+section h2{
+    color: blanchedalmond;
+    margin-bottom: 18px;
+}
+.bienvenida{
+    background-color: rgb(165, 148, 182);
+    padding: 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border-left: 6px solid #252525;
+}
+.tarjeta{
+    background-color: antiquewhite;
+    padding: 25px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow:0 4px 12px rgb(165, 148, 182);
+    transition: transform 0.3s;
+}
+.tarjeta:hover{
+    transform: translateY(-4px);
+}
+.tarjeta h3{
+    color: black;
+    margin-bottom: 10px;
+}
+.tarjeta a{
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #25eb60;
+    font-weight: bold;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+.galeria figure{
+    background-color: antiquewhite;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #c383ff;
+}
+.galeria img{
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+.galeria img:hover{
+    transform: scale(1.20);
+}
+.galeria figcaption{
+    padding: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+.recursos{
+    background-color: aliceblue;
+    padding: 25px;
+    border-radius: 12px;
+}
+.piepagina{
+    background-color: #252525;
+    color: antiquewhite;
+    text-align: center;
+    padding: 28px 15px;
+}
+.piepagina p{
+    margin: 5px;
+}
+
+@media (max-width: 768px){
+    .galeria{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    .encabezado{
+        padding: 35px 15px;
+    }
+}
+@media (max-width: 480px){
+    .galeria{
+        grid-template-columns: 1fr;
+    }
+    .navegacion{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navegacion a{
+        display: block;
+    }
+    .bienvenida{
+        padding: 20px;
+    }
+}
