@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let continua = confirm("Desea agregar sus datos?");
+
+        if(continua){
+            let nombre = (prompt("Ingresa su nombre"));
+            let edad = Number(prompt("Ingresa tu edad:"));
+            let especialidad = (prompt("ingresa tu especialidad"));
+            let correoE = (prompt("Ingrese su correo electronico"));
+            let telefono = (prompt("Ingrese su telefono"))
+
+
+            document.write("tu nombre es:" + nombre + "<br>");
+            document.write("tu edad es de: " + edad + " años" +"<br>");
+            document.write("tu especialidad es: " + especialidad + "<br>");
+            document.write("tu correo electrónico es: " + correoE + "<br>");
+            document.write("tu número de teléfono es: " + telefono + "<br>");
+        }else{
+            alert("tengo flojera");
+        }
+    </script>
+    
+</body>
+</html>
