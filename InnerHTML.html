@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML</title>
+</head>
+<body bgcolor="red">
+    <h1>Aprendiendo</h1>
+    <style>
+        h1{
+            color: aliceblue;
+        }
+    </style>
+    <h2>1.-InnerHTML</h2>
+    <p class="info">Permite leer o cambiar el contenido HTML de un elemento.</p>
+    <h4>Ejemplo 1:</h4>
+    <p id="mensaje">Hola Mundo</p>
+    <script>
+        document.getElementById("mensaje").innerHTML="Bienvenido!!";
+    </script>
+    <br><br>
+    <h4>Ejemplo 2:</h4>
+    <div id="imagen"></div>
+    <script>
+        document.getElementById("imagen").innerHTML='<img src="imagenes/2.jpg" alt= "Logo">';
+    </script>
+    <br><br><br>
+
+    <h2>2.-document.getElementById()</h2>
+    <p class="info">Busca un elemento en el documento HTML por su identificador (id).</p>
+    <h4>Ejemplo 1:</h4>
+    <p id="aviso">Mensaje Inicial</p>
+    <script>
+        var elemento = document.getElementById("aviso");
+        elemento.textContent = "Hola Estudiantes";
+    </script>
+    <br><br>
+    <h4>Ejemplo 2:</h4>
+    <button id="btn">Haz clic</button>
+    <script>
+        document.getElementById("btn").style.backgroundColor = "lightblue";
+    </script>
+    <br><br><br>
+
+    <h2>3.-querySelector()</h2>
+    <p class="info">Selecciona el primer elemento que coincida con un selector CSS (puede ser una id,clase o una etiqueta).</p>
+    <h4>Ejemplo 1:</h4>
+    <p class="destacado">Texto Importante</p>
+    <script>
+        document.querySelector(".destacado").style.color = "blue";
+    </script>
+    <br><br>
+    <h4>Ejemplo 2:</h4>
+    <button class="btnn">Enviar</button>
+    <script>
+        document.querySelector(".btnn").disabled = true;
+    </script>
+
+    <style>
+        .info{
+            padding: 20px;
+            background-color: aliceblue;
+        }
+    </style>
+</body>
+</html>

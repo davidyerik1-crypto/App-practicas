@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operaciones</h1>
+    <script>
+        let res1 = Number(prompt("Que operaciones deseas realizar? 1)Suma 2)Resta 3)Multiplicacion 4)Division"));
+        let num1 = Number(prompt("Ingresa el primer número"));
+        let num2 = Number(prompt("Ingresa el segundo número"));
+        let resultado = 0;
+
+        switch(res1){
+            case 1:
+                resultado = num1 + num2;
+                document.write("El resultado de tu suma es: " + resultado);
+            break;
+            case 2:
+                resultado = num1 - num2;
+                document.write("El resultado de tu resta es: " + resultado);
+            break;
+            case 3:
+                resultado = num1 * num2;
+                document.write("El resultado de tu multiplicación es: " + resultado);
+            break;
+            case 4:
+                resultado = num1 / num2;
+                document.write("El resultado de tu división es: " + resultado);
+            break;
+            default:
+                document.write("operacion invalida");
+        }
+    </script>
+    <br>
+    <h1>Signo zodiacal</h1>
+    <script>
+        let res2 = Number(prompt("Ingresa el numero de mes en el que naciste, te diré tu signo zodiacal"))
+        let respuesta = "";
+
+        switch(res2){
+            case 1:
+                respuesta = "Capricornio";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            case 2:
+                respuesta = "Acuario";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            case 3:
+                respuesta = "Piscis";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            case 4:
+                respuesta = "Aries";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            case 5:
+                respuesta = "Tauro";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            case 6:
+                respuesta = "Géminis";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            case 7:
+                respuesta = "Cáncer";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            case 8:
+                respuesta = "Leo";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            case 9:
+                respuesta = "Virgo";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            case 10:
+                respuesta = "Libra";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            case 11:
+                respuesta = "Escorpio";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            case 12:
+                respuesta = "Sagitario";
+                document.write("Tu signo zodiacal es: " + respuesta);
+            break;
+            default:
+                document.write("Mes inválido");
+        }
+    </script>
+</body>
+</html>

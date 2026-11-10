@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>¿Aprobaste la materia?</h1>
+    <script>
+        let respuesta = Number(prompt("¿Cuanto sacaste de calificación?"));
+
+        if(respuesta >= 6){
+            if(respuesta <= 10){
+                document.write("Aprobaste!!! sacaste: " + respuesta + " de calificacion");
+            }else{
+                document.write("Calificacion invalida");
+            }
+        }else{
+            document.write("Reprobaste sacaste: " + respuesta + " de calificacion");
+        }
+    </script>
+</body>
+</html>
